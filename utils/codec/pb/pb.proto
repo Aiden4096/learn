@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package pb;
+message Entry{
+  bytes key =1;
+  bytes value=2;
+  uint64 version = 3;
+  uint64 expires_at = 4;
+}
